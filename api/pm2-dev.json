@@ -4,6 +4,6 @@
     "script"       : "app.js",
     "watch"        : ["app.js", "routes", "schema", "lib"],
     "ignore_watch" : ["node_modules"],
-    "node_args": "--inspect"
+    "node_args": "--harmony --inspect"
   }]
 }

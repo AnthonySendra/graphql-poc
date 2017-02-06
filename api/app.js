@@ -6,15 +6,14 @@ var { buildSchema } = require('graphql');
 var cors = require('cors')
 var fs = require('fs')
 var path = require('path')
+var User = require('./lib/graphql/entities/User')
 
 // Construct a schema, using GraphQL schema language
 var schema = buildSchema(String(fs.readFileSync(path.join(__dirname, 'lib', 'graphql', 'schema.graphqls'))))
 
 // The root provides a resolver function for each API endpoint
 var root = {
-  hello: () => {
-    return 'Hello world!';
-  },
+  getUser: User.getUser
 };
 
 var app = express();
