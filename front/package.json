@@ -5,7 +5,10 @@
   "author": "Anthony Sendra <anthony.sendra@gmail.com>",
   "private": true,
   "dependencies": {
-    "nuxt": "latest"
+    "apollo-client": "^0.8.3",
+    "graphql-tag": "^1.2.4",
+    "nuxt": "latest",
+    "vue-apollo": "^1.3.1"
   },
   "scripts": {
     "dev": "nuxt",
