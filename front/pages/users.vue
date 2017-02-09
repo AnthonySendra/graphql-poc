@@ -8,7 +8,8 @@
 
     <h1>User {{userId}}:</h1>
     <p>Username: {{user.username}}</p>
-    <p>Description: {{user.description}}</p>
+
+    <description :id="userId"></description>
 
     <nuxt-link class="button" to="/">
       Home page
@@ -18,9 +19,12 @@
 
 <script>
   import gql from 'graphql-tag'
-  import Vue from 'vue'
+  import Description from '../components/User/Description.vue'
 
   export default {
+    components: {
+      Description
+    },
     data () {
       return {
         user: {},
