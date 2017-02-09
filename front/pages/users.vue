@@ -18,6 +18,7 @@
 
 <script>
   import gql from 'graphql-tag'
+  import Vue from 'vue'
 
   export default {
     data () {
