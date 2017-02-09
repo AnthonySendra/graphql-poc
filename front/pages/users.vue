@@ -28,7 +28,7 @@
     data () {
       return {
         user: {},
-        userId: 1
+        userId: '1'
       }
     },
     apollo: {
